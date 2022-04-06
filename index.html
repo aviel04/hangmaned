@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="Title">HANGMAN</h1> 
+    <div id="main">
+        <p>Insert a Character you think the word contains</p>
+        <p>If it's in the word it will appear in the word skeleton </p>
+    </div>
+        <hr>
+        <div id="inp">
+            <label for="input" id="letter">Enter Character:</label>
+            <input type="text" name="input" id="guess" >
+            <input onClick='turn()'  value="submit" id="btn">
+        </div>
+        <hr>
+        <div id="game">
+            <h4 id="skeleton"></h4>
+            <h4 id="log">log in here:</h4>
+        </div>
+    <script src="hangman.js"></script>
+</body>
+</html>
